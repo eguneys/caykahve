@@ -40,26 +40,3 @@
        Restrict ph5
          ok Rxh5
        ph6
-         
-       
-
-
-
-
-    Board = Pos -> Piece
-
-    Actor = { Board Piece Pos }
-
-    Posce = { pos: Pos, piece: Piece }
-
-    Move0 = { actor: Posce, dest: Pos }
-
-    Move1 = { move: Move0, 
-              capture?: Pos,
-              promote?: ct.Role }
-
-    Castle = [Move0, Move0]
-    
-    Game = prune Board[] ~ Tree<Merit> ~ Tree<Board[]>
-
-    

@@ -1,10 +1,9 @@
 import { nt } from 'nefs';
+import { ts } from 'tschess';
 
 export type Piese = {
   piece: nt.Piece
   pos: nt.Pos
 }
 
-export type Pieses = Set<Piese>;
-
-export type PiesesSelection = [Piese, Set<Piese>]
+export type Moves = Array<ts.Move>
